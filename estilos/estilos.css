@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+.login {
+    background-image: url(../images/GcDATA\ 1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.menu {
+	background-color: #f5f7fa;
+}
+
+.card.booking-card.v-2 {
+  background-color: #00527A;
+}
+
+.card.booking-card.v-2 .fa {
+  color: #f7aa00;
+}
+
+.card.booking-card.v-2 .card-body .card-text {
+  color: #db2d43;
+}
+
+.card.card.booking-card.v-2 .chip {
+  background-color: #87e5da;
+}
+
+.card.booking-card.v-2 .card-body hr {
+  border-top: 1px solid #f7aa00;
+}
+.card-body{
+    color: white;
+    text-align: center;
+}
+
+.usuarios img{
+    padding-top: 25px;
+    width: 170px;
+    height: 200px;
+}
+
+.btn-user button{
+    background-color: #FE6B00;
+}
+/*************Menu**************/
+html {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.grid-container > * {
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  background-color: #f5f5f5;
+  justify-content: center;
+}
+
+.bien{
+    text-align: center;
+    background: #FF9101;
+    padding: 15px 280px;
+    color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header"  80px
+    "navbar"  50px
+    "main"    auto
+
+}
+
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  75px
+      "navbar  navbar  navbar" 100px
+      "main     main     main"  auto /
+      200px    auto   200px;
+  }
+}
